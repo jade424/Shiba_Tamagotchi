@@ -1,4 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
 body {
-    color: #B0E0E6;
-    text-align: center;
+  background-image: url("https://png.pngtree.com/back_origin_pic/04/48/85/278cdd4d876bdf261d3244987658ec64.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  color: #B0E0E6;
+  text-align: center;
+  text-shadow: 2px 2px 5px blue;
+  font-size: 36px;
+  font-family: indie flower;
+}
+
+h2 {
+  margin : 5px, 0px, 5px, 0px;
+  font-size: 28px;
+}
+img {
+    border-radius: 10px;
+    display: inline-flex;
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: auto;
+    width: 25%;
   }
