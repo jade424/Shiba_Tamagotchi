@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
 *{
     margin:0;
     padding:0;
@@ -6,6 +7,9 @@
 }
 body {
   background-image: url("https://png.pngtree.com/back_origin_pic/04/48/85/278cdd4d876bdf261d3244987658ec64.jpg");
+  width: 100vw;
+  height: 100vh;
+  display:inline-table;
   background-size: 100%;
   background-repeat: no-repeat;
   color: #B0E0E6;
@@ -13,6 +17,7 @@ body {
   text-shadow: 2px 2px 5px blue;
   font-size: 36px;
   font-family: indie flower;
+  align-content: center;
 }
 
 h2 {

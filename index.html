@@ -7,23 +7,27 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./css/style.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+        crossorigin="anonymous"></script>
         <script src ="./script/script.js" defer></script>
     </head>
-         <body>
-         <h1 id="heading">SHIBAGOTCHI</h1>
+         <body>>
+         <h1>SHIBAGOTCHI</h1>
          <h2>A Loyal and Loving Friend</h2>
-         <img src = "./images/shibafulledit2.png">
+         <div class="character">
+             <img src="images/shibafulledit2.png">
+         </div>    
          <div>
-            <p> Hello, My Name Is</p>
+            <p id=petName> Hello, My Name Is</p>
             <input/>
-            <button>Let's Play!</button>
+            <button id="gamebutton" onclick="startGame()">Let's Play!</button>
          </div>
-         <div id="button-area">
+         <div id="buttonaction">
             <button id='feed'>Feed</button>
             <button id="play">Play</button>
             <button id="love">Pet</button>
             <button id="nap">Nap</button>
         </div>
-          
     </body>
 </html>
