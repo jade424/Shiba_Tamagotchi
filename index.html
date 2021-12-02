@@ -14,20 +14,20 @@
     </head>
          <body>>
          <h1>SHIBAGOTCHI</h1>
-         <h2>A Loyal and Loving Friend</h2>
+         <p id="friend">A Loyal and Loving Friend</p>
          <div class="character">
-             <img src="images/shibafulledit2.png">
+             <img src="images/shibafulledit2.png" width="150" height="150" alt="shiba">
          </div>    
-         <div>
-            <p id=petName> Hello, My Name Is</p>
-            <input/>
+         <div id="petName"> Hello, My Name Is</p>
+            <input type="text" id="yourpet" placeholder="Pet Name" >
             <button id="gamebutton" onclick="startGame()">Let's Play!</button>
          </div>
-         <div id="buttonaction">
+         <div id="buttonaction" class="playbuttons">
             <button id='feed'>Feed</button>
             <button id="play">Play</button>
             <button id="love">Pet</button>
             <button id="nap">Nap</button>
+        </div>
         </div>
     </body>
 </html>
