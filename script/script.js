@@ -1,5 +1,8 @@
 //I neeed to set variables
 //I need to set a class for the pet
+
+
+
 //I need to set animation for the images (heart / sushi / ball /etc) to fall in the game and be clickable
 //I need to add the sound effect for when buttons are clicked 
 //I need to create a progress meter to inidcate pet's status
