@@ -17,7 +17,14 @@ body {
   font-family: indie flower;
 }
 
-#age {
+.intro {
+
+  position: relative;
+  margin-top: 180px;
+  margin-right: 100px;
+}
+
+#petage {
   position: relative;
   float: right;
   border-style: solid;
@@ -187,6 +194,5 @@ body {
   height: 40px;
   width: 40px;
   font-family: indie-flower;
-  color: red;
-  
+  color: red; 
 }
