@@ -2,7 +2,7 @@
 *{
     margin:0;
     padding:0;
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
 }
 
 body {
@@ -17,21 +17,37 @@ body {
   font-family: indie flower;
 }
 
-.petStatus {
-  display: flex;
-  flex-wrap: wrap;
+.ageBox {
+  position: relative;
+  float: right;
   border-style: solid;
   border-width: 1px;
   border-color: black;
   border-radius: 5px;
   margin: 10px;
-  padding: 10px;
-  width: 250px;
+  padding: 3px;
+  width: 225px;
   height: auto;
   flex-direction: column;
   background-color: white;
-  size-adjust: 75%;
+  size-adjust: 50%;
 }
+
+.petStatus {
+  position: relative;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 3px;
+  width: 225px;
+  height: auto;
+  flex-direction: column;
+  background-color: white;
+  size-adjust: 50%;
+}
+
 #hungerStatus {
   position: relative;
   width: 210px;
@@ -153,8 +169,24 @@ body {
   text-shadow:powderblue;
 }
 
-.character {
+#character {
 
   position: absolute;
   top: 250px;
+}
+
+.playButtons {
+
+  position: relative;
+  margin-top: 550px;
+  height: 4px;
+}
+
+#btn {
+
+  height: 40px;
+  width: 40px;
+  font-family: indie-flower;
+  color: red;
+  
 }

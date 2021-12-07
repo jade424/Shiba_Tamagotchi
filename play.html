@@ -8,16 +8,21 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./css/style.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"></script>
         <script src="./script/script.js" async defer></script>
     </head>
     <body>
     <main>
+        <div class = "ageBox">Age</div>
+        </div>
         <div>
             <img src="/images/newtails.png" id ="character" width="300" height="500">
         </div>
     </main>
+    <div>
         <div class="petStatus">Pet Status</div>
-
         <div class ="petStatus" id="hungerStatus" >
             <div id="hungry__fill"> Hunger
                 <span id="hungry__text">25%</span>
@@ -38,16 +43,17 @@
                 <span id="tired__text">25%</span>
             </div>
         </div>
-
+        </div>
+        </body>
         <div class="playButtons">
             <img src="/images/thiseatgood.png" alt="fullShiba">
-            <button class="btn">Feed</button>
+            <button id="btn">Feed</button>
             <img src="/images/usethisball.png" alt="fullShiba">
-            <button class="btn">Play</button>
+            <button id="btn">Play</button>
             <img src="/images/thisheartgood.png" alt="fullShiba">
-            <button class="btn">Love</button>
+            <button id="btn">Love</button>
             <img src="/images/shibaeatedit.png" alt="fullShiba">
-            <button class="btn">Sleep</button>
+            <button id="btn">Sleep</button>
         </div>
 
         <!-- <div class="playButtons">

@@ -1,15 +1,42 @@
-//I neeed to set variables
-//I need to set a class for the pet
+//Set Variables
+
+//Set Shiba Name
+
+// let shibaName = "";
+
+//Set Pet Class
+
+class Shiba {
+    constructor(petName, petAge, petHunger, petBoredom, petTired, petSad, isPuppy, isAlive) {
+
+        this.petName = "";
+        this.petAge ="";
+        this.petHunger = 0;
+        this.petBoredom = 0;
+        this.petTired = 0;
+        this.petSad = 0;
+        this.isPuppy = true;
+        this.isAlive = true;
+    }
+}
+
+
+// Set up Functions
+
+function name() {
+    this.petName = document.getElementById("petname").value
+}
 
 
 
-//I need to set animation for the images (heart / sushi / ball /etc) to fall in the game and be clickable
-//I need to add the sound effect for when buttons are clicked 
-//I need to create a progress meter to inidcate pet's status
-//I need to set this progress meter to interact with the movements in the game
+// function feed() {
+//     if (this.petHunger < 1) {
+//         this.petHunger = 0;
+//     } else {
+//         this.petHunger -=1;
+//     }
+//     document.getElementByID()
+// }
 
-    function updatePetStat()
-//I need to set a naptime/bedtime button (bedtime first ... nap if i have more time to add extra stuff)
-//I need to set a win condition
-//I need to set a lose condition
+// function updatePetStat()
 
