@@ -115,35 +115,35 @@ boredomIntervalId = setInterval(function() {
         
     } else {
         shiba.boredom = shiba.boredom + 1;
-        $fatigueProgress.css('width', knight.fatigue + '%');
+        $bored__fill.css('width', shiba.boredom + '%');
     }
 }, 1500);
 
-swordIntervalId = setInterval(function(){
-    if(knight.skill <= 0) {
-        clearInterval(swordIntervalId);
-        $('#gameover').html('You have failed because your sword has grown weak and dull...')
+affectionntervalId = setInterval(function() {
+    if(shiba.affection <= 0) {
+        clearInterval(affectionntervalId);
+        $('#gameover').html('Your shiba has filed for emancipation from lack of love!')
         gameOver();
         
     } else {
-        knight.skill = knight.skill - 3;
-        $swordProgress.css('width', knight.skill + '%');
+        shiba.affection = shiba.affection - 1;
+        $sad__fill.css('width', shiba.affection + '%');
     }
 }, 3000);
 
-ageIntervalId = setInterval(function(){
-    if(knight.hunger >=100 || knight.fatigue >= 100 || knight.skill <= 0) {
-        clearInterval(ageIntervalId);
-    }  
-    else if (knight.age >= 10) {
-        $('#pet').attr("src", form2);  
-    }  
-    else {
-        knight.age++;
-        $age.html('Days Survived: ' + knight.age);
-    }
+// ageIntervalId = setInterval(function(){
+//     if(knight.hunger >=100 || knight.fatigue >= 100 || knight.skill <= 0) {
+//         clearInterval(ageIntervalId);
+//     }  
+//     else if (knight.age >= 10) {
+//         $('#pet').attr("src", form2);  
+//     }  
+//     else {
+//         knight.age++;
+//         $age.html('Days Survived: ' + knight.age);
+//     }
 
-}, 5000)
+// }, 5000)
 
 
 
@@ -153,23 +153,24 @@ ageIntervalId = setInterval(function(){
 
 //action buttons
     $('#feed').click(function(){
-        knight.feed();
+        shiba.feed();
         feedSound.play();
     });
 
-    $('#sleep').click(function(){
-        knight.sleep();
-        sleepSound.play();
+    $('#play').click(function(){
+        shiba.play();   
     });
 
-    $('#practice').click(function(){
-        knight.practice();
-        swordSound.play();
+    $('#love').click(function(){
+        shiba.love();
     });
+    $('#sleep').click(function() {
+        shiba.sleep();
+    })
 
-    $('#brighten').click(shine);
+    // $('#brighten').click(shine);
 
-    $('#darken').click(dimLight);
+    // $('#darken').click(dimLight);
 
     $('#restart').click(restartGame);
 
