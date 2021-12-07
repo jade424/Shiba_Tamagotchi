@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html>
     <head>
         <meta charset="utf-8">
@@ -13,17 +12,19 @@
         crossorigin="anonymous"></script>
         <script src="./script/script.js" async defer></script>
     </head>
+<body>
+    <main>
     <body>
     <main>
-        <div id="petage"> Pet Age
-                <p><output type="inline" id="petage" value="0"></output></p>
-            </div>
-        </div>
+        <div class="ageBar">
+            <span id="ageTimer"> Age: </span> 
+            <span>0</span> 
+      </div>
         <div>
             <img src="/images/newtails.png" id ="character" width="300" height="500">
         </div>
     </main>
-    <div>
+    <div class="container">
         <div class="petStatus">Pet Status</div>
         <div class ="petStatus" id="hungerStatus" >
             <div id="hungry__fill"> Hunger
@@ -49,14 +50,21 @@
         </body>
         <div class="playButtons">
             <img src="/images/thiseatgood.png" alt="fullShiba">
-            <button class = "btn" id="feed">Feed</button>
-            <img src="/images/usethisball.png" alt="funShiba">
-            <button class = "btn" id="play">Play</button>
-            <img src="/images/thisheartgood.png" alt="happyShiba">
-            <button class = "btn" id="love">Love</button>
-            <img src="/images/shibaeatedit.png" alt="sleepShiba">
-            <button class = "btn" id="sleep">Sleep</button>
-        </div>
+            <button id="feedbtn">Feed</button>
+            <img src="/images/usethisball.png" alt="fullShiba">
+            <button id="playbtn">Play</button>
+            <img src="/images/thisheartgood.png" alt="fullShiba">
+            <button id="lovebtn">Love</button>
+            <img src="/images/shibaeatedit.png" alt="fullShiba">
+            <button id="sleepbtn">Sleep</button>
+        </div> -->
+
+        <!-- <div class="playButtons">
+            <button class ="playButtons" id="feedbtn" type = "button">Feed</button>
+            <button class ="playButtons" id="playbtn" type = "button">Play</button>
+            <button class ="playButtons" id="lovebtn" type = "button">Love</button>
+            <button class ="playButtons" id="sleepbtn" type = "button">Bed Time</button>
+        </div> -->
        
     </body>
 </html>
