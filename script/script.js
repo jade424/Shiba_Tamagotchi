@@ -1,4 +1,4 @@
-    let shiba = {
+    const shiba = {
         
         name: " ",
         hunger: 0,
@@ -21,14 +21,15 @@ sleep() {
     this.tired = this.tired -1;
 }
 
+$('#start').click(function() {
+    startIntervals();  
+});
 let $hungerStatus = $('#hungerStatus');
 let $boredStatus = $('#boredStatus');
 let $sadStatus = $('#sadStatus');
 let $sleepStatus = $('#sleepStatus');
 
-$('#start').click(function() {
-    startIntervals();  
-});
+
 
 let hungerIntervalId = '';
 let boredIntervalId = '';
