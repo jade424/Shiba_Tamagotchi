@@ -80,6 +80,9 @@ body {
   width: 50%;
   height: 100%;
   background: pink;
+  font-size: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-shadow:powderblue;
 }
 
 #hungry__text {
@@ -87,15 +90,18 @@ body {
   top: 15px;
   right: 5px;
   transform: translateY(-50%);
-  font-size: 14px;
+  font-size: 16px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  text-shadow:powderblue
+  text-shadow:powderblue;
 }
 
 #bored__fill {
   width: 50%;
   height: 100%;
   background: pink;
+  font-size: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-shadow:powderblue;
 }
 
 #bored__text {
@@ -103,15 +109,19 @@ body {
   top: 15px;
   right: 5px;
   transform: translateY(-50%);
-  font-size: 14px;
+  font-size: 16px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  text-shadow:powderblue
+  text-shadow:powderblue;
+
 }
 
 #sad__fill {
   width: 50%;
   height: 100%;
   background: pink;
+  font-size: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-shadow:powderblue
 }
 
 #sad__text {
@@ -119,7 +129,7 @@ body {
   top: 15px;
   right: 5px;
   transform: translateY(-50%);
-  font-size: 14px;
+  font-size: 16px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-shadow:powderblue;
 }
@@ -128,6 +138,9 @@ body {
   width: 50%;
   height: 100%;
   background: pink;
+  font-size: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-shadow:powderblue;
 }
 
 #tired__text {
@@ -135,9 +148,17 @@ body {
   top: 15px;
   right: 5px;
   transform: translateY(-50%);
-  font-size: 14px;
+  font-size: 16px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-shadow:powderblue;
+}
+
+.playButtons {
+  
+  position: relative;
+  top: 300px;
+  left: 50px;
+
 }
 
 /* .container-stats {
