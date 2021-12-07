@@ -153,26 +153,8 @@ body {
   text-shadow:powderblue;
 }
 
-.playButtons {
-  
-  position: relative;
-  top: 300px;
-  left: 50px;
+.character {
 
+  position: absolute;
+  top: 250px;
 }
-
-/* .container-stats {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 25px;
-  font-size: 18px;
-  font-family:'Courier New', Courier, monospace;
-  border-color: powderblue;
-}
-
-.song {
-  margin
-  position: relative;
-  
-} */
