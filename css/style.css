@@ -1,4 +1,4 @@
- @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 *{
     margin:0;
     padding:0;
@@ -36,7 +36,6 @@ body {
   width: 125px;
   height: auto;
   flex-direction: column;
-  background-color: white;
   size-adjust: 50%;
 }
 
@@ -51,7 +50,6 @@ body {
   width: 225px;
   height: auto;
   flex-direction: column;
-  background-color: white;
   size-adjust: 50%;
 }
 
@@ -179,15 +177,24 @@ body {
 #character {
 
   position: absolute;
-  top: 250px;
-  margin-left: 10px;
+  top: 150px;
+  margin: 100px 50px 100px 25px;
 }
 
 .playButtons {
 
   position: relative;
-  margin-top: 550px;
-  height: 4px;
+  margin-top: 200px;
+  margin-right: 20px;
+  padding: 10px;
   font-family: indie-flower;
+  font-size: 20px;
   color: red;
 } 
+
+.sleep {
+  
+  background-color: black;
+  opacity: .8;
+
+}

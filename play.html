@@ -10,22 +10,21 @@
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
         crossorigin="anonymous"></script>
-        <script src="./script/script.js" async defer></script>
+        <script src="./script/play.js" async defer></script>
     </head>
 <body>
     <main>
-    <body>
-    <main>
+        <h1>SHIBAGOTCHI</h1>
+    
         <div class="ageBar">
             <span id="ageTimer"> Age: </span> 
-            <span>0</span> 
+            <span id="age">0</span> 
       </div>
         <div>
-            <img src="/images/newtails.png" id ="character" width="300" height="500">
+            <img src="/images/newtails.png" id ="character" width="200" height="400">
         </div>
-    </main>
     <div class="container">
-        <div class="petStatus">Pet Status</div>
+        <div class="petStatus" id="petName">Pet Status</div>
         <div class ="petStatus" id="hungerStatus" >
             <div id="hungry__fill"> Hunger
             </div>
@@ -35,7 +34,7 @@
             </div>
         </div>
         <div class="petStatus" id="sadStatus">
-            <div id="sad__fill"> Affection
+            <div id="sad__fill"> Sad
             </div>
         </div>
         <div class="petStatus" id="sleepStatus">
@@ -43,24 +42,22 @@
             </div>
         </div>
         </div>
-        </body>
-        <div class="playButtons">
-            <img src="/images/thiseatgood.png" alt="fullShiba">
-            <button id="feedbtn">Feed</button>
-            <img src="/images/usethisball.png" alt="fullShiba">
-            <button id="playbtn">Play</button>
-            <img src="/images/thisheartgood.png" alt="fullShiba">
-            <button id="lovebtn">Love</button>
-            <img src="/images/shibaeatedit.png" alt="fullShiba">
-            <button id="sleepbtn">Sleep</button>
-        </div> -->
 
         <!-- <div class="playButtons">
+            <button><img src="/images/thiseatgood.png" alt="fullShiba"></button>
+            <button><img src="/images/usethisball.png" alt="funShiba"></button>
+            <button><img src="/images/thisheartgood.png" alt="loveShiba"></button>
+            <button><img src="/images/shibaeatedit.png" alt="sleepShiba"></button>
+        </div> -->
+
+        <div class="playButtons">
             <button class ="playButtons" id="feedbtn" type = "button">Feed</button>
             <button class ="playButtons" id="playbtn" type = "button">Play</button>
             <button class ="playButtons" id="lovebtn" type = "button">Love</button>
             <button class ="playButtons" id="sleepbtn" type = "button">Bed Time</button>
-        </div> -->
-       
+        </div>
+    </main>   
     </body>
 </html>
+
+
