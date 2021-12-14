@@ -39,7 +39,9 @@ let ageInterval = setInterval(function(){
     age++;
     document.querySelector('#age').innerHTML = age;
     if(age == 3){
-        document.querySelector('#character').src="../images/shibaeat.jpeg";
+        document.querySelector('#character').src="../images/onigiri.png";
+    } else if(age == 7){
+        document.querySelector('#character').src="";
     }
     checkLevels();
 }, 5000);
@@ -48,19 +50,23 @@ let ageInterval = setInterval(function(){
 function checkLevels(){
     if(hunger == 10){
         clearIntervals(); 
-        alert('Your pet starved');
+        alert('Your pet has filed for emancipation by reason of starvation');
     }
     if(bored == 10){
         clearIntervals(); 
-        alert('Your pet is bored');
+        alert('Your pet has filed for emancipation by reason of you are boring');
     }
     if(sad == 10){
         clearIntervals(); 
-        alert('Your pet is depressed');
+        alert('Your pet has filed for emancipation by reason of you are neglectful');
     }
     if(tired == 10){
         clearIntervals(); 
-        alert('Your pet is exhausted');
+        alert('Your pet has filed for emancipation by reason of uncomfortable sleep conditions');
+    }
+    if(age == 18){
+        clearIntervals();
+        alert('You now have a loyal and loving friend!');
     }    
 }
 
