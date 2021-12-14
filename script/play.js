@@ -6,11 +6,14 @@ let sad = 0;
 let tired = 0;
 let age = 0;
 
+//Bringing the pet name over from the landing page//
+
 let petName = localStorage.getItem('petname');
 console.log('petname' + petName); 
 
 document.querySelector('#petName').innerHTML = petName + ' Status';
 
+//Setting intervals for metrics and dog age//
 let hungerInterval = setInterval(function(){
     hunger++;
     document.querySelector('#hungry__fill').innerHTML = 'Hunger ' + hunger;
@@ -41,35 +44,39 @@ let ageInterval = setInterval(function(){
     if(age == 3){
         document.querySelector('#character').src="../images/onigiri.png";
     } else if(age == 7){
-        document.querySelector('#character').src="";
+        document.querySelector('#character').src="../images/shibawalk.png";
+    } else if(age == 10){
+        document.querySelector('#character').src="../images/shibaramen.png";
+    } else if(age == 15){
+        document.querySelector('#character').src="../images/shibaxmas.png";
     }
     checkLevels();
 }, 5000);
 
-
+//Checking the intervals//
 function checkLevels(){
-    if(hunger == 10){
+    if(hunger == 11){
         clearIntervals(); 
         alert('Your pet has filed for emancipation by reason of starvation');
     }
-    if(bored == 10){
+    if(bored == 11){
         clearIntervals(); 
         alert('Your pet has filed for emancipation by reason of you are boring');
     }
-    if(sad == 10){
+    if(sad == 11){
         clearIntervals(); 
         alert('Your pet has filed for emancipation by reason of you are neglectful');
     }
-    if(tired == 10){
+    if(tired == 11){
         clearIntervals(); 
         alert('Your pet has filed for emancipation by reason of uncomfortable sleep conditions');
-    }
-    if(age == 18){
+    }   
+    if(age == 19){
         clearIntervals();
         alert('You now have a loyal and loving friend!');
     }    
 }
-
+//Game Stops and reset for loss or win//
 function clearIntervals(){
     clearInterval(hungerInterval);
     clearInterval(boredInterval);
@@ -78,6 +85,7 @@ function clearIntervals(){
     clearInterval(ageInterval);
 }
 
+//Functions are here//
 let feedbtn = document.querySelector('#feedbtn');
 feedbtn.addEventListener('click', function () {
     hunger -= 1;
@@ -115,7 +123,7 @@ sleepbtn.addEventListener('click', function () {
     document.querySelector('main').classList.add('sleep');
     let sleepInterval = setInterval(function(){
         wakeUp();
-    }, 1000);
+    }, 3000);
     function wakeUp() {
         document.querySelector('main').classList.remove('sleep');
         clearInterval(sleepInterval);
